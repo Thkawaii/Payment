@@ -1,0 +1,337 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+   }
+   .app-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #030303;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+   }
+   header {
+    display: flex;
+    background-color: #ff85b3;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+   }
+   .payment-section, .banking-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+   }
+   table {
+    width: 100%;
+    margin-top: 20px;
+   }
+   th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f0e1f4;
+   }
+   button {
+    background-color: #ff85b3;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   }
+   button:hover {
+    background-color: #ff65a3;
+   }
+   footer {
+    padding: 20px;
+    background-color: #ff85b3;
+    color: white;
+    position: fixed;
+    left: 50;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+   }
+
+   .tabs button {
+    padding: 10px 20px;
+    margin-right: 5px;
+    background-color: #070707;
+    border: rgb(255, 255, 255);
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+   }
+   .tabs button:hover {
+    background-color: #222222;
+   }
+   .tabs button:focus, .tabs button.active {
+    border-bottom: 2px solid #ff85b3;
+   }
+  
+   .receipt-section {
+    background-color: #ffb9fd;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   }
+   .receipt-section h2 {
+    color: #000000;
+   }
+   .receipt-section table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+   }
+   .receipt-section td {
+    padding: 8px;
+    border-bottom: 1px solid #000000;
+   }
+   .contact-info p {
+    margin: 5px 0;
+   }
+
+   .status-display {
+    color: black;
+    
+   }
+   .status-display .confirmed {
+    color: rgb(58, 252, 15);
+   }
+   .status-display .pending {
+    color: rgb(255, 121, 3);
+   }
+   .status-display .cancelled {
+    color: rgb(243, 0, 0);
+   }
+
+.bank-logo {
+    display: flex;
+    justify-content: flex-start; /* Align contents of the logo to the start */
+    align-items: center; /* Center contents vertically */
+    margin-right: 20px; /* Space between logos horizontally */
+    margin-bottom: 20px; /* Space between rows of logos when they wrap */
+}
+@media (max-width: 768px) {
+    .bank-logo {
+        margin-right: 10px; /* Less space between logos on smaller screens */
+        margin-bottom: 10px; /* Less space vertically between wrapped items */
+    }
+}
+
+.bank-logo img {
+    width: 100px; /* Fixed width for images */
+    height: auto; /* Maintains the aspect ratio of the images */
+}
+
+
+.payment-container {
+    display: flex;               /* Establishes a flex container for child elements */
+    justify-content: space-between; /* Distributes extra space evenly between children */
+    align-items: flex-start;     /* Aligns children to the start of the cross axis */
+    padding: 20px;               /* Adds padding inside the container */
+    margin: 0 auto;              /* Centers the container horizontally in its parent */
+    max-width: 600px;            /* Sets a maximum width for the container */
+}
+
+.banking-box {
+    display: flex;               /* Establishes a flex container */
+    flex-wrap: wrap;             /* Allows items to wrap as needed */
+    justify-content: flex-start; /* Aligns children to the start of the main axis */
+    align-items: stretch;        /* Stretches items to fill the container vertically */
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 15px;
+    margin-top: 20px;
+    border: 5px solid #000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.bank-logo, .detail-display {
+    flex: 1 1 200px;             /* Allows flex items to grow and shrink from a base of 200px */
+    margin: 10px;                /* Consistent margin for alignment */
+    padding: 30px;               /* Padding for internal spacing */
+    background-color: #ff85b3;   /* Background color matching the container */
+    border-radius: 15px;         /* Rounded corners for aesthetic consistency */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Shadow for depth */
+    text-align: center;          /* Central alignment of content */
+}
+   .cash-box {
+    text-align: center;
+    flex: 1 1 200px;             /* Allows flex items to grow and shrink from a base of 200px */
+    margin: 10px;                /* Consistent margin for alignment */
+    padding: 20px;               /* Padding for internal spacing */
+    background-color: #ff85b3;   /* Background color matching the container */
+    border-radius: 15px;         /* Rounded corners for aesthetic consistency */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Shadow for depth */
+    text-align: center;          /* Central alignment of content */
+}
+.banking-box h2 {
+    width: 100%;                 /* Ensures the title spans the full width of the container */
+    text-align: center;          /* Centers the title text */
+    color: #ffffff;                 /* Sets the text color */
+    margin-bottom: 20px;         /* Provides space between the title and the content below */
+}
+
+   .bank-logo button {
+    background-color: #ff65ed;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+   }
+   .bank-logo button:hover {
+    background-color: #f995ed;
+   }
+
+   .table {
+    width: 100%;
+    border-collapse: collapse;
+   }
+   .table th, .table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+   }
+   .table th {
+    background-color: #f0f0f0;
+   }
+   .img-responsive {
+    max-width: 100%;
+    height: auto;
+   }
+   .contact-reception {
+    margin-top: 20px;
+    color: #333;
+    font-style: italic;
+   }
+   
+/* General styles for the app container */
+
+
+/* Styles for displaying banking details or QR code */
+.detail-display {
+    flex: 3 1 600px;             /* Gives the element a flexible basis of 600px, but allows it to grow or shrink */
+    background-color: #000000;
+      /* White background */
+    padding: 20px;               /* Padding inside the container for content spacing */
+    border-radius: 8px;          /* Rounded corners */
+    text-align: center;          /* Centers text and any other inline content */
+    margin-bottom: 20px;         /* Space below the container */
+
+    /* Enhanced box shadow for an embossed look */
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.1),   /* Slightly larger shadow for a subtle depth */
+        0 1px 3px rgba(0, 0, 0, 0.2),   /* Smaller shadow for detailed edge */
+        inset 0 2px 4px rgba(255, 255, 255, 0.1); /* Inner shadow for an embossed effect */
+}
+
+
+.detail-display img {
+    max-width: 100%;                 /* Ensures the QR code fits within the display area */
+    height: auto;                    /* Maintains the aspect ratio of the image */
+}
+.detail-display h3 {
+    color: #ffffff; /* Dark gray text color for visibility */
+    background-color: #000000; /* White background to highlight the text */
+    padding: 10px 10px; /* Padding around the text for space within the border */
+    border-radius: 10px; /* Rounded corners for a softer, polished look */
+    box-shadow: 
+        0px 4px 6px rgba(0, 0, 0, 0.1), /* Larger soft shadow for depth */
+        inset 0px 2px 4px rgba(255, 255, 255, 0.6); /* Inner white shadow for embossed effect */
+    margin: 0 auto 10px; /* Centers the header and adds space below */
+    max-width: 80%; /* Limits the width to enhance focus */
+    text-align: center; /* Ensures the text is centered within the box */
+}
+.inner-frame {
+    background-color: #ff85b3; /* Pink background matching the container */
+    padding: 20px; /* Sufficient padding for inner content */
+    margin: 10px auto; /* Centering it within its parent container */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), /* Outer shadow for depth */
+                inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow for an embossed effect */
+    border: 1px solid #ccc; /* Subtle border for defined edges */
+    max-width: 80%; /* Maximum width to ensure it doesn’t grow too large */
+    text-align: center; /* Center align the text and any content */
+    display: flex; /* Using flexbox for easy content alignment */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Vertically center content within the frame */
+    align-items: center; /* Horizontally center content within the frame */
+    overflow: hidden; /* Hides any overflowing content */
+    font-size: 2em;
+}
+
+.close-button {
+    padding: 5px 10px;
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Space between the button and other content */
+}
+
+.close-button:hover {
+    opacity: 0.8; /* Slight transparency on hover for visual effect */
+}
+.service-table {
+    color: black;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .service-table h2 {
+    text-align: center;
+  }
+  
+  .service-table table {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .service-table th, .service-table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid black;
+  }
+  
+  .service-table th {
+    background-color: #f0e1f4;
+  }
+  
+  .btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .update {
+    background-color: lightgreen;
+  }
+  
+  .delete {
+    background-color: lightcoral;
+  }
+.add {
+    background-color: rgb(120, 117, 255);
+}
+.icon-style {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
