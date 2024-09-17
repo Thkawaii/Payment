@@ -1,0 +1,83 @@
+.setup-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* width: 100%;
+    height: 100%; */
+    /* background: #17641a; */
+    /* align-content: center;
+    justify-content: center; */
+    /* z-index: 1; */
+}
+
+.setup-page-header {
+    /* margin-left:20px; */
+    padding: 20px;
+    font-size: 26px;
+}
+
+.custom-table {
+    position: relative;
+    /* display: flex;
+    flex-direction: row; */
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    /* align-content: center;
+    justify-content: center; */
+    overflow: auto;
+}
+
+/* Styling the entire table */
+.setup-page .ant-table {
+    /* position: absolute; */
+    background-color: #f9f9f9;
+    margin: 10px 10px 10px 10px;
+    width: calc(100% - 20px);
+    height: 100%;
+}
+
+/* Styling the table header */
+.setup-page .ant-table-thead > tr > th {
+    background-color: #0080ff;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Styling table rows */
+.setup-page .ant-table-tbody > tr > td {
+    padding: 12px;
+    text-align: center;
+}
+
+/* Alternating row colors */
+.setup-page .ant-table-tbody > tr:nth-child(odd) > td {
+    background-color: #f2f2f2;
+}
+
+.setup-page .ant-table-tbody > tr:nth-child(even) > td {
+    background-color: #ffffff;
+}
+
+.image-edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.container-edit-button {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    row-gap: 10px;
+}
+
+/* :where(.css-dev-only-do-not-override-1gwfwyx).ant-upload-wrapper.ant-upload-picture-card-wrapper .ant-upload-list.ant-upload-list-picture-card, :where(.css-dev-only-do-not-override-1gwfwyx).ant-upload-wrapper.ant-upload-picture-circle-wrapper .ant-upload-list.ant-upload-list-picture-card, :where(.css-dev-only-do-not-override-1gwfwyx).ant-upload-wrapper.ant-upload-picture-card-wrapper .ant-upload-list.ant-upload-list-picture-circle, :where(.css-dev-only-do-not-override-1gwfwyx).ant-upload-wrapper.ant-upload-picture-circle-wrapper .ant-upload-list.ant-upload-list-picture-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}   */

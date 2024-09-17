@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.app-container table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: separate; /* Ensure border-radius is applied */
+  border-spacing: 0; /* Remove default spacing between cells */
+  
+}
+.app-container th {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 2px solid #ddd;
+  background-color: #0085FF; /* Initial bright blue background */
+  color: #ffffff; /* White text color */
+  font-weight: bold;
+  position: relative; /* For pseudo-element positioning */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.app-container th:not(:last-child)::after {
+  content: '|';
+  position: absolute;
+  right: 8px; /* Adjust as needed */
+  color: #ffffff; /* Ensure the color matches the text color */
+  font-size: 1em;
+}
+
+
+.app-container th:first-child {
+  border-top-left-radius: 8px; /* Top-left corner */
+}
+
+.app-container th:last-child {
+  border-top-right-radius: 8px; /* Top-right corner */
+}
+
+
+
+.app-container header {
+  display: flex;
+  background: #0085FF;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 128, 255, 0.3); /* Enhanced shadow for depth */
+}
+
+
+
+
+
+
+.app-container header:hover {
+  background: linear-gradient(135deg, #00c2ff, #0080ff); /* Inverted gradient on hover */
+  box-shadow: 0 8px 16px rgba(0, 128, 255, 0.5); /* Enhanced shadow on hover */
+}
+
+
+.payment-section, .banking-section {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Add shadow for depth */
+}
+
+.app-container table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+
+
+
+.app-container td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  background-color: inherit; /* Inherits the row background color */
+  
+
+}
+
+.app-container tr:nth-child(even) {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+.app-container tr:nth-child(odd) {
+  background-color: #f2f2f2;
+  color: #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+
+
+/* Hover effect with keyframe animation */
+.app-container tr:hover {
+  background-color: #e1e1e1; /* Slightly darker on hover */
+  animation: rowHoverLift 0.5s ease forwards; /* Apply keyframe animation */
+}
+
+
+
+.app-container table button {
+  background: linear-gradient(135deg, #0080ff, #00c2ff); /* Gradient background */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  margin: 10px;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 128, 255, 0.5); /* Shadow for depth */
+}
+
+.app-container table button:hover {
+  background: linear-gradient(135deg, #00c2ff, #0080ff); /* Inverted gradient on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 128, 255, 0.7); /* Enhance shadow on hover */
+}
+
+.app-container table button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(0, 128, 255, 0.3); /* Focus ring effect */
+}
+
+.app-container .tabs button {
+  padding: 12px 24px;
+  margin-right: 5px;
+  background-color: #070707;
+  border: 1px solid transparent;
+  border-bottom: 2px solid transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.app-container .tabs button:hover {
+  background-color: #222222;
+  border-color: #ffffff; /* Highlight border on hover */
+}
+
+.app-container .receipt-section {
+  background-color: #b9ffdd;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.booking-table {
+  color: black;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  height: 420px;
+  border-collapse: collapse;
+  overflow: auto;
+}
+
+.order-table {
+  color: black;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  height: 420px;
+  border-collapse: collapse;
+  overflow: auto;
+}
+.order-table h2 {
+  text-align: center;
+  color: #ffffff;
+  background-color: #0085FF; /* Bright blue background */
+  padding: 12px;
+  border-radius: 8px 8px 0 0; /* Rounded corners on top */
+  overflow: hidden; /* To handle content overflow cleanly */
+
+  /* Shadow and transitions similar to .app-container th */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.payment-menu-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px; /* Slightly more rounded corners */
+  
+  /* Enhanced shadow for a raised effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1); 
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for interaction */
+}
+.payment-section h2 {
+  text-align: center;
+  font-size: 28px; /* Larger font size for prominence */
+  color: white; /* Text color for contrast */
+  padding: 20px; /* Padding similar to the header */
+  border-radius: 8px; /* Rounded corners */
+  background: #0085FF;
+  box-shadow: 0 6px 12px rgba(0, 128, 255, 0.3); /* Enhanced shadow for depth */
+  letter-spacing: 1.5px; /* Slightly increased letter spacing for a refined look */
+  font-weight: bold; /* Bold text for more impact */
+}
+
+
+
+
+
+
+
+
+
+.app-container button.btn-delete-booking,
+.app-container button.btn-delete-order {
+  background: linear-gradient(135deg, #ff2f2f, #ff7c7c); /* Gradient background */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  margin: 10px;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.app-container button.btn-delete-booking:hover,
+.app-container button.btn-delete-order:hover {
+  background: linear-gradient(135deg, #ff7c7c, #ff2f2f); /* Inverted gradient on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(255, 0, 0, 0.7); /* Enhance shadow on hover */
+}
+
+.app-container button.btn-delete-booking:focus,
+.app-container button.btn-delete-order:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3); /* Focus ring effect */
+}
+
+/* .app-container .receipt-section h2 {
+  color: #000000;
+} */
+
+/* .app-container .table {
+  width: 100%;
+  border-collapse: collapse;
+} */
+
+/* .app-container .table th,.app-container.table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+} */
+
+/* .app-container .table th {
+  background-color: #f0f0f0;
+} */
+
+/* .app-container .img-responsive {
+  max-width: 100%;
+  height: auto;
+} */
+
+/* .app-container .contact-reception {
+  margin-top: 20px;
+  color: #333;
+  font-style: italic;
+} */
+
+
+
+/* .order-table table {
+  width: 100%;
+  margin: 20px 0;
+} */
+
+/* .order-table th, .order-table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid black;
+} */
+
+/* .order-table th {
+  background-color: #f0e1f4;
+} */
+

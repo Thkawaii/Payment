@@ -1,0 +1,136 @@
+
+.receipt {
+  font-family: 'Arial', sans-serif;
+  max-width: 400px;
+  height: auto;
+  margin: auto;
+  border: 2px solid #000; /* Black border for the receipt */
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.thank-you {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.receipt-header {
+  text-align: center;
+}
+
+.receipt-footer {
+  text-align: center;
+}
+
+.receipt-header h1 {
+  margin: 0;
+  font-size: 22px;
+  animation: textFade 6s ease-in-out infinite; /* Text fade animation */
+}
+
+.receipt-room {
+  display: grid;
+  grid-template-columns: 1fr 50px 100px; /* Menu takes remaining space, fixed width for amount and price */
+  margin-bottom: 5px;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd; /* Optional: Add separator */
+}
+
+.menu {
+  text-align: left;
+}
+
+.amount {
+  text-align: center;
+}
+
+.price {
+  text-align: right;
+}
+
+
+.receipt-order {
+  display: grid;
+  grid-template-columns: 1fr 50px 100px; /* Menu takes remaining space, fixed width for amount and price */
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd; /* Optional: Add separator */
+}
+
+.a {
+  text-align: left; /* Align menu list to the left */
+}
+
+.b {
+  text-align: center; /* Align amount in the center */
+}
+
+.c {
+  text-align: right; /* Align price to the right */
+}
+
+
+
+.receipt-divider {
+  border-top: 1px dashed #000;
+  padding-top: 20px;
+  margin-top: 10px;
+}
+.receipt-divider1 {
+  border-top: 1px dashed #000;
+  padding-top: 20px;
+  margin-top: 10px;
+}
+.receipt-divider div {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.receipt-oop {
+  border-top: 1px dashed #000;
+  padding-top: 5px;
+  margin-top: 10px;
+}
+
+.qr-code {
+  width: 250px;
+  height: 250px;
+  border: 4px solid #000; /* Thicker black border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover effect */
+}
+
+.qr-code:hover {
+  transform: scale(1.05); /* Slightly enlarge the QR code */
+  filter: brightness(1.1); /* Slight brightness increase */
+}
+
+.qr-code-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+
+.qr-code-text {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+  color: #000000;  /* Changed to full black for stronger contrast */
+  animation: textFade 2s infinite ease-in-out; /* Apply textFade animation */
+  transition: color 0.2s ease; /* Smooth transition for color change */
+}
+
+
+.qr-code-container:hover .qr-code-text {
+  color: #000; /* Change text color on hover */
+}

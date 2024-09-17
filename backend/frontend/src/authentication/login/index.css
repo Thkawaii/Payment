@@ -1,0 +1,19 @@
+.page-login {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+/* 
+.contianer-login {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    background-color: brown;
+} */

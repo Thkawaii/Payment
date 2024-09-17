@@ -1,0 +1,55 @@
+.menu-page {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Distribute buttons left and right */
+    align-items: center; /* Align buttons vertically */
+    /* margin-top: 20px; */
+    margin-left: 10px;
+    /* margin-bottom: 0; */
+}
+
+.button-container .left-buttons {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    gap: 10px; /* Space between buttons */
+}
+
+/* .button-container .right-buttons {
+    position: absolute;
+    display: flex;
+    right: 30px;
+    bottom: 0;
+} */
+
+.button-container button{
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+    border: 0px;
+    margin-bottom: 0;
+    padding: 0px 15px;
+    font-size: 11px;
+    background-color: #efefef;
+    color: #aaaaaa;
+    cursor: pointer;
+    transition: background-color 0.25s, color 0.25s, border-color 0.25s;
+}
+
+/* Hover and Active States */
+.button-container button:hover {
+    background-color: #ffffff;
+    color: #aaaaaa;
+}
+
+.button-container button.active {
+    background-color: #ffffff;
+    color: #000000;
+}

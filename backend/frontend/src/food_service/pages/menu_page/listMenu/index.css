@@ -1,0 +1,132 @@
+.list-menu-page{
+    position: relative;
+    width: 65%;
+    height: 100%;
+    /* background-color: rgb(255, 110, 110); */
+    overflow: auto;
+}
+
+.food-list {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    /* padding-top: 0px; */
+    /* gap: 10px; Space between each food item */
+}
+  
+.food-list h2 {
+    width: auto;
+    height: auto;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+.food-item {
+    display: grid;
+    grid-template-columns: 50px 180px 320px auto;
+    gap: 10px;
+    /* column-gap: 20px; */
+    align-items: center;
+    /* justify-content: center; */
+    /* justify-content: flex-start;  */
+    /* gap: 15px; */
+    margin-bottom: 20px;
+}
+
+.food-item h1 {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+.food-list p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.6;
+}
+
+.round-buttons {
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+    border-radius: 50%; /* ให้ปุ่มกลม */
+    border: 2px solid #0085FF;
+    padding: 0.6em;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.25s, color 0.25s, border-color 0.25s;
+}
+
+.round-buttons:hover {
+    background-color: #0084ff; /* สีเมื่อถูกกด */
+    border: 2px solid #0084ff;
+}
+
+.round-buttons.active {
+    background-color: #0085FF; /* สีเมื่อถูกกด */
+    color: #ffffff;
+}
+
+.image-menu {
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin: auto; 
+    width: 150px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+ 
+.menu-list {
+    width: 400px;
+    /* max-width: 200px; */
+    /* background-color: #0085FF; */
+}
+
+.amount-control-frame {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center; /* จัดให้ปุ่มและ input อยู่กึ่งกลางแนวตั้ง */
+    justify-content: center; /* จัดให้ปุ่มและ input อยู่กึ่งกลางแนวนอน */
+    /* background-color: #ff0000; */
+    padding: 2px; /* เพิ่มระยะห่างภายใน container */
+}
+
+.minus-button, .plus-button {
+    padding: 0.4em 0.8em;
+    border-radius: 5px; /* ให้ปุ่มกลม */
+    background-color: #e4e4e4;
+    border: 2px solid #e4e4e4;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.25s, color 0.25s, border-color 0.25s;
+    /* ลบ margin เพื่อให้ปุ่มเรียงชิดติดกัน */
+}
+
+.minus-button:hover, .plus-button:hover {
+    background-color: #ffffff;
+    border: 2px solid #e4e4e4;
+}
+
+input.amount {
+    width: 40px; /* กำหนดความกว้างให้พอเหมาะ */
+    height: 30px; /* กำหนดความสูงให้พอเหมาะ */
+    margin: 0px; /* เพิ่มระยะห่างซ้ายและขวาของ input ให้มีระยะห่างเล็กน้อย */
+    font-size: 18px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    text-align: center; /* จัดข้อความให้อยู่กึ่งกลาง */
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+ 
+.back-button {
+    position: fixed;
+ }
